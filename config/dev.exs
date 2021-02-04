@@ -7,7 +7,7 @@ config :graphql_elixir, GraphqlElixir.Repo,
   database: "graphql_elixir_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  pool_size: 100
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
@@ -17,8 +17,8 @@ config :graphql_elixir, GraphqlElixir.Repo,
 # with webpack to recompile .js and .css sources.
 config :graphql_elixir, GraphqlElixirWeb.Endpoint,
   http: [port: 4000],
-  debug_errors: true,
-  code_reloader: true,
+  debug_errors: false,
+  code_reloader: false,
   check_origin: false,
   watchers: []
 
