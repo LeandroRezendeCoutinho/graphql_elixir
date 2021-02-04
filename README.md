@@ -1,3 +1,16 @@
+# Benchmark
+
+- Erlang/OTP 23
+- Elixir 1.11.2
+- Ryzen 7 2700 16gb RAM
+
+### Command
+- autocannon -m 'POST' -b '{ "query": "{ allLinks { id url description } }" }' -H "Content-Type: application/json" http://localhost:4000/graphiql
+
+![alt text](https://github.com/LeandroRezendeCoutinho/graphql_elixir/blob/master/assets/img/elixir_graphql.png)
+
+![alt text](https://github.com/LeandroRezendeCoutinho/graphql_elixir/blob/master/assets/img/elixir_graphql_resources.png)
+
 # GraphqlElixir
 
 To start your Phoenix server:
